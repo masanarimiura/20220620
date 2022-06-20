@@ -21,7 +21,7 @@ class ExerciseFactory extends Factory
         return [
             'name' => $this->faker->name,
             'email' => $this->faker->email,
-            'profile' =>  $this->faker->realText(512),
+            'profile' =>  $this->faker->realText(100),
         ];
     }
 }

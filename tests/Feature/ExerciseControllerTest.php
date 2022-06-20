@@ -30,8 +30,8 @@ class ExerciseControllerTest extends TestCase
     {
         $data = [
             'name' => 'exercise',
-            'email' => 'exercise@example.com',
-            'proflie' => 'for Health',
+            'email' => 'exercise@.com',
+            'profile' => 'forHealth',
         ];
         $response = $this->post('/api/v1/exercise', $data);
         $response->assertStatus(201);
@@ -55,7 +55,7 @@ class ExerciseControllerTest extends TestCase
         $data = [
             'name' => 'exercise',
             'email' => 'exercise@example.com',
-            'proflie' => 'for Health',
+            'profile' => 'forHealth',
         ];
         $response = $this->put('/api/v1/exercise/' . $item->id, $data);
         $response->assertStatus(200);
